@@ -11,13 +11,13 @@ const products = [
   {
     id: 'egg-organic',
     name: 'Organic Free-Range Eggs (10 pcs)',
-    price: 40000,
+    price: 45000,
     image:
       'https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=800&auto=format&fit=crop',
   },
   {
     id: 'telur-cerdas',
-    name: 'Telur Cerdas – Large Premium Eggs for Smarter Life (10 pcs)',
+    name: 'Telur Cerdas - Large Premium Eggs for Smarter Life (10 pcs)',
     price: 50000,
     image: '/images/telurcerdas.png',
     // 'https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?q=80&w=1110&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',

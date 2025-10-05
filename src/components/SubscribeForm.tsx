@@ -2,7 +2,7 @@
 
 export default function SubscribeForm() {
   return (
-    <section id='subscribe' className='bg-white py-16 text-center'>
+    <section id='subscribe' className='bg-white px-8 py-16 text-center'>
       <h2 className='text-primary mb-4 text-3xl font-bold'>
         Join Our Newsletter
       </h2>
@@ -24,7 +24,7 @@ export default function SubscribeForm() {
         />
         <button
           type='submit'
-          className='bg-primary rounded px-6 py-2 text-white'
+          className='bg-primary hover: cursor-pointer rounded px-6 py-2 text-white hover:bg-orange-600'
         >
           Subscribe
         </button>

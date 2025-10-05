@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import { CartProvider } from './context/CartContext';
 
 export const metadata = {
   title: 'Telur Cerdas',
@@ -15,9 +16,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );
