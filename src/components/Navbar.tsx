@@ -76,18 +76,16 @@ export default function Navbar() {
           <div className='flex items-center gap-4'>
             <Link
               href='/cart'
-              onClick={() => setMenuOpen(false)}
-              className='flex items-center gap-2'
+              // onClick={() => setMenuOpen(false)}
+              className='relative flex items-center gap-2'
             >
-              <div className='relative'>
-                <ShoppingCartIcon className='hover:text-primary h-6 w-6 text-gray-800' />
+              <ShoppingCartIcon className='hover:text-primary h-6 w-6 text-gray-800' />
 
-                {totalItems > 0 && (
-                  <span className='bg-primary absolute -top-2 -right-2 ml-2 flex h-5 w-5 items-center justify-center rounded-full text-xs font-semibold text-white'>
-                    {totalItems}
-                  </span>
-                )}
-              </div>
+              {totalItems > 0 && (
+                <span className='bg-primary absolute -top-2 -right-2 ml-2 flex h-5 w-5 items-center justify-center rounded-full text-xs font-semibold text-white'>
+                  {totalItems}
+                </span>
+              )}
             </Link>
             <Bars3Icon className='hover:text-primary h-7 w-7 text-gray-800 hover:cursor-pointer' />
           </div>

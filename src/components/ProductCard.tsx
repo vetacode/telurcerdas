@@ -41,9 +41,7 @@ export default function ProductCard({ id, name, price, image }: any) {
           type='number'
           min='1'
           value={quantity}
-          onChange={(e) =>
-            setQuantity(Math.max(1, parseInt(e.target.value) || 1))
-          }
+          onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value)))}
           className='focus:border-primary w-20 rounded border border-gray-300 px-2 py-1 text-center focus:outline-none'
         />
       </div>
