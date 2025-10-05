@@ -73,7 +73,22 @@ export default function Navbar() {
         {menuOpen ? (
           <XMarkIcon className='hover:text-primary h-7 w-7 text-gray-800 hover:cursor-pointer' />
         ) : (
-          <Bars3Icon className='hover:text-primary h-7 w-7 text-gray-800 hover:cursor-pointer' />
+          <div className='flex items-center gap-4'>
+            <Link
+              href='/cart'
+              onClick={() => setMenuOpen(false)}
+              className='flex items-center gap-2'
+            >
+              <ShoppingCartIcon className='hover:text-primary h-6 w-6 text-gray-800' />
+
+              {totalItems > 0 && (
+                <span className='bg-primary ml-2 flex h-5 w-5 items-center justify-center rounded-full text-xs font-semibold text-white'>
+                  {totalItems}
+                </span>
+              )}
+            </Link>
+            <Bars3Icon className='hover:text-primary h-7 w-7 text-gray-800 hover:cursor-pointer' />
+          </div>
         )}
       </button>
 
