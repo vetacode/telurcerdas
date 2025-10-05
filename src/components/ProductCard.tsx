@@ -26,7 +26,7 @@ export default function ProductCard({ id, name, price, image }: any) {
         alt={name}
         width={400}
         height={300}
-        className='mx-auto mb-4 rounded object-fill'
+        className='mx-auto mb-4 w-full rounded object-fill'
       />
       <div className='mb-4 flex flex-col items-center justify-center gap-2'>
         <h3 className='mb-1 text-xl font-semibold'>{name}</h3>
