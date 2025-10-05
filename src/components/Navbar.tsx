@@ -126,15 +126,7 @@ export default function Navbar() {
                   Products
                 </Link>
               </li>
-              <li>
-                <a
-                  href='#subscribe'
-                  onClick={() => setMenuOpen(false)}
-                  className='bg-primary inline-block rounded px-4 py-2 text-white transition-colors hover:bg-orange-600'
-                >
-                  Subscribe
-                </a>
-              </li>
+
               <li className='hover:text-primary'>
                 <Link
                   href='/cart'
@@ -149,6 +141,15 @@ export default function Navbar() {
                     </span>
                   )}
                 </Link>
+              </li>
+              <li>
+                <a
+                  href='#subscribe'
+                  onClick={() => setMenuOpen(false)}
+                  className='bg-primary inline-block rounded px-4 py-2 text-white transition-colors hover:bg-orange-600'
+                >
+                  Subscribe
+                </a>
               </li>
             </ul>
           </motion.div>
