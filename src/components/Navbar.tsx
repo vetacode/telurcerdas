@@ -26,7 +26,7 @@ export default function Navbar() {
             alt='Telur Cerdas Logo'
             width={60}
             height={60}
-            className='width-auto rounded'
+            className='rounded'
           />
           <h1 className='text-primary text-xl font-bold'>
             <Link href='/'>Telur Cerdas</Link>
