@@ -36,15 +36,7 @@ export default function CartPage() {
 
   return (
     <div className='container mx-auto max-w-4xl px-6 py-12'>
-      <div className='flex justify-between'>
-        <h1 className='text-primary mb-8 text-3xl font-bold'>🛒 Your Cart</h1>
-        <Link
-          href='/products'
-          className='bg-primary h-full rounded px-6 py-3 text-white transition-colors hover:bg-orange-600'
-        >
-          Add Other Eggs
-        </Link>
-      </div>
+      <h1 className='text-primary mb-8 text-3xl font-bold'>🛒 Your Cart</h1>
 
       {cart.length === 0 ? (
         <div className='text-center'>
@@ -108,12 +100,12 @@ export default function CartPage() {
               </div>
             ))}
 
-            {/* <Link
+            <Link
               href='/products'
               className='bg-primary rounded px-6 py-3 text-white transition-colors hover:bg-orange-600'
             >
-              Add More
-            </Link> */}
+              Add More Eggs
+            </Link>
           </div>
 
           {/* Total + Checkout */}
