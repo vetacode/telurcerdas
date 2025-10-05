@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className='from-primary bg-gradient-to-r to-orange-400 px-8 py-20 text-center text-white'>
+    <section className='from-primary bg-gradient-to-b to-orange-400 px-8 py-20 text-center text-white'>
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

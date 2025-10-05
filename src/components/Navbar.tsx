@@ -17,144 +17,146 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className='sticky top-0 z-50 flex items-center justify-between bg-white px-6 py-4 shadow-md'>
+    <nav className='sticky top-0 z-50 flex items-center justify-between bg-white px-6 py-2 shadow-md'>
       {/* Logo */}
-      <div className='flex items-center gap-3'>
-        <Image
-          src='/images/logo.svg'
-          alt='Telur Cerdas Logo'
-          width={60}
-          height={60}
-          className='width-auto rounded'
-        />
-        <h1 className='text-primary text-xl font-bold'>
-          <Link href='/'>Telur Cerdas</Link>
-        </h1>
-      </div>
+      <section className='mx-auto flex w-4xl justify-between gap-3'>
+        <div className='flex items-center gap-3'>
+          <Image
+            src='/images/logo.svg'
+            alt='Telur Cerdas Logo'
+            width={60}
+            height={60}
+            className='width-auto rounded'
+          />
+          <h1 className='text-primary text-xl font-bold'>
+            <Link href='/'>Telur Cerdas</Link>
+          </h1>
+        </div>
 
-      {/* Desktop Nav */}
-      <ul className='hidden items-center gap-6 md:flex'>
-        <li>
-          <Link href='/' className='hover:text-primary'>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href='/products' className='hover:text-primary'>
-            Products
-          </Link>
-        </li>
-        {/* Cart */}
-        <li className='relative'>
-          <Link href='/cart' className='flex items-center gap-2'>
-            <ShoppingCartIcon className='hover:text-primary h-6 w-6 text-gray-800 transition-colors' />
+        {/* Desktop Nav */}
+        <ul className='hidden items-center gap-6 md:flex'>
+          <li>
+            <Link href='/' className='hover:text-primary'>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href='/products' className='hover:text-primary'>
+              Products
+            </Link>
+          </li>
+          {/* Cart */}
+          <li className='relative'>
+            <Link href='/cart' className='flex items-center gap-2'>
+              <ShoppingCartIcon className='hover:text-primary h-6 w-6 text-gray-800 transition-colors' />
+              {totalItems > 0 && (
+                <span className='bg-primary absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full text-xs font-semibold text-white'>
+                  {totalItems}
+                </span>
+              )}
+            </Link>
+          </li>
+          <li>
+            <a
+              href='#subscribe'
+              className='bg-primary rounded px-4 py-2 text-white transition-colors hover:bg-orange-600'
+            >
+              Subscribe
+            </a>
+          </li>
+        </ul>
+
+        {/* Mobile Menu Button */}
+        <div className='flex items-center gap-4 md:hidden'>
+          {/* Cart icon */}
+          <Link href='/cart' className='relative flex items-center'>
+            <ShoppingCartIcon className='hover:text-primary h-6 w-6 text-gray-800' />
             {totalItems > 0 && (
-              <span className='bg-primary absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full text-xs font-semibold text-white'>
+              <span className='bg-primary absolute -top-2 -right-2 ml-2 flex h-5 w-5 items-center justify-center rounded-full text-xs font-semibold text-white'>
                 {totalItems}
               </span>
             )}
           </Link>
-        </li>
-        <li>
-          <a
-            href='#subscribe'
-            className='bg-primary rounded px-4 py-2 text-white transition-colors hover:bg-orange-600'
+
+          {/* Menu toggle */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className='hover:cursor-pointer focus:outline-none'
           >
-            Subscribe
-          </a>
-        </li>
-      </ul>
+            {menuOpen ? (
+              <XMarkIcon className='hover:text-primary h-7 w-7 text-gray-800' />
+            ) : (
+              <Bars3Icon className='hover:text-primary h-7 w-7 text-gray-800' />
+            )}
+          </button>
+        </div>
 
-      {/* Mobile Menu Button */}
-      <div className='flex items-center gap-4 md:hidden'>
-        {/* Cart icon */}
-        <Link href='/cart' className='relative flex items-center'>
-          <ShoppingCartIcon className='hover:text-primary h-6 w-6 text-gray-800' />
-          {totalItems > 0 && (
-            <span className='bg-primary absolute -top-2 -right-2 ml-2 flex h-5 w-5 items-center justify-center rounded-full text-xs font-semibold text-white'>
-              {totalItems}
-            </span>
+        {/* Mobile Sheet Menu */}
+        <AnimatePresence>
+          {menuOpen && (
+            <motion.div
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+              className='fixed inset-y-0 right-0 z-40 flex w-3/4 flex-col bg-white p-6 shadow-xl md:hidden'
+            >
+              <div className='mb-6 flex items-center justify-between'>
+                <h2 className='text-primary text-xl font-bold'>Menu</h2>
+                <button onClick={() => setMenuOpen(false)}>
+                  <XMarkIcon className='h-7 w-7 text-gray-800' />
+                </button>
+              </div>
+
+              <ul className='flex flex-col gap-4 text-lg'>
+                <li>
+                  <Link
+                    href='/'
+                    onClick={() => setMenuOpen(false)}
+                    className='hover:text-primary'
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href='/products'
+                    onClick={() => setMenuOpen(false)}
+                    className='hover:text-primary'
+                  >
+                    Products
+                  </Link>
+                </li>
+
+                <li className='hover:text-primary'>
+                  <Link
+                    href='/cart'
+                    onClick={() => setMenuOpen(false)}
+                    className='flex items-center gap-2'
+                  >
+                    <ShoppingCartIcon className='hover:text-primary h-6 w-6 text-gray-800' />
+                    Cart
+                    {totalItems > 0 && (
+                      <span className='bg-primary ml-2 flex h-5 w-5 items-center justify-center rounded-full text-xs font-semibold text-white'>
+                        {totalItems}
+                      </span>
+                    )}
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href='#subscribe'
+                    onClick={() => setMenuOpen(false)}
+                    className='bg-primary inline-block rounded px-4 py-2 text-white transition-colors hover:bg-orange-600'
+                  >
+                    Subscribe
+                  </a>
+                </li>
+              </ul>
+            </motion.div>
           )}
-        </Link>
-
-        {/* Menu toggle */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className='hover:cursor-pointer focus:outline-none'
-        >
-          {menuOpen ? (
-            <XMarkIcon className='hover:text-primary h-7 w-7 text-gray-800' />
-          ) : (
-            <Bars3Icon className='hover:text-primary h-7 w-7 text-gray-800' />
-          )}
-        </button>
-      </div>
-
-      {/* Mobile Sheet Menu */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ x: '100%' }}
-            animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-            className='fixed inset-y-0 right-0 z-40 flex w-3/4 flex-col bg-white p-6 shadow-xl md:hidden'
-          >
-            <div className='mb-6 flex items-center justify-between'>
-              <h2 className='text-primary text-xl font-bold'>Menu</h2>
-              <button onClick={() => setMenuOpen(false)}>
-                <XMarkIcon className='h-7 w-7 text-gray-800' />
-              </button>
-            </div>
-
-            <ul className='flex flex-col gap-4 text-lg'>
-              <li>
-                <Link
-                  href='/'
-                  onClick={() => setMenuOpen(false)}
-                  className='hover:text-primary'
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='/products'
-                  onClick={() => setMenuOpen(false)}
-                  className='hover:text-primary'
-                >
-                  Products
-                </Link>
-              </li>
-
-              <li className='hover:text-primary'>
-                <Link
-                  href='/cart'
-                  onClick={() => setMenuOpen(false)}
-                  className='flex items-center gap-2'
-                >
-                  <ShoppingCartIcon className='hover:text-primary h-6 w-6 text-gray-800' />
-                  Cart
-                  {totalItems > 0 && (
-                    <span className='bg-primary ml-2 flex h-5 w-5 items-center justify-center rounded-full text-xs font-semibold text-white'>
-                      {totalItems}
-                    </span>
-                  )}
-                </Link>
-              </li>
-              <li>
-                <a
-                  href='#subscribe'
-                  onClick={() => setMenuOpen(false)}
-                  className='bg-primary inline-block rounded px-4 py-2 text-white transition-colors hover:bg-orange-600'
-                >
-                  Subscribe
-                </a>
-              </li>
-            </ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
+        </AnimatePresence>
+      </section>
     </nav>
   );
 }
