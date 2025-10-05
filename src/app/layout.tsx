@@ -34,7 +34,7 @@ export default function RootLayout({
               pauseOnHover
               theme='light'
               toastClassName='!rounded-lg !shadow-lg'
-              // bodyClassName='!text-gray-800'
+              className='!text-gray-800'
               progressClassName='!bg-primary'
             />
           </main>
