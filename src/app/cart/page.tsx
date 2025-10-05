@@ -54,7 +54,7 @@ export default function CartPage() {
             {cart.map((item) => (
               <div
                 key={item.id}
-                className='flex items-center justify-between rounded-lg bg-white p-4 shadow'
+                className='flex flex-col gap-4 rounded-lg bg-white p-4 shadow sm:flex-row sm:items-center sm:justify-between'
               >
                 {/* Product Info */}
                 <div className='flex items-center gap-4'>
@@ -74,7 +74,7 @@ export default function CartPage() {
                 </div>
 
                 {/* Quantity + Controls */}
-                <div className='flex items-center gap-4'>
+                <div className='flex flex-wrap items-center justify-between gap-4 sm:justify-end'>
                   <input
                     type='number'
                     min='1'
@@ -82,12 +82,12 @@ export default function CartPage() {
                     onChange={(e) =>
                       updateQuantity(
                         item.id,
-                        Math.max(1, parseInt(e.target.value) || 1)
+                        Math.max(1, parseInt(e.target.value))
                       )
                     }
                     className='focus:border-primary w-20 rounded border border-gray-300 px-2 py-1 text-center focus:outline-none'
                   />
-                  <p className='w-24 text-right'>
+                  <p className='w-24 text-right sm:text-left'>
                     Rp {(item.price * item.quantity).toLocaleString('id-ID')}
                   </p>
                   <button
