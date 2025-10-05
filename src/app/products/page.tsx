@@ -12,7 +12,7 @@ const products = [
   },
   {
     id: 'egg-organic',
-    name: 'Herbal Low-Cholesterol Eggs (per pack: 10 eggs)',
+    name: 'Herbal Low-Cholesterol Eggs (10 eggs)',
     desc: 'Telur Herbal Rendah Kolesterol, Tidak Amis, Tidak Menyebabkan Alergi, Cocok Untuk Vegetarian, Kualitas Premium',
     kemasan: 'Minimum packaging dus: 6 pack per dus',
     price: 48000,
@@ -21,7 +21,7 @@ const products = [
   },
   {
     id: 'telur-cerdas',
-    name: 'Telur Cerdas - Premium Eggs for Smart Life (per pack: 10 eggs)',
+    name: 'Telur Cerdas - Premium Eggs for Smart Life (10 eggs)',
     desc: 'Telur Premium yang diperkaya Omega-3, Antioksidan, Selenium Organik, serta Herbal Essential Oils. Setiap butir Telur Cerdas membantu menutrisi otak, menjaga daya tahan tubuh, dan mendukung energi harian secara alami. Hanya seharga segelas kopi di kafe, Anda sudah bisa menghadirkan nutrisi berkualitas untuk keluarga tercinta. 🌿 Karena tumbuh kembang anak dan kesehatan keluarga adalah investasi terbaik. Telur Cerdas – Otak Kuat, Anak Hebat',
     kemasan: 'Minimum packaging dus: 6 pack per dus',
     price: 55000,

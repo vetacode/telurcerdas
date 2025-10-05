@@ -22,7 +22,21 @@ export default function RootLayout({
           <Navbar />
           <main className='flex-grow'>
             {children}
-            <ToastContainer />
+            <ToastContainer
+              position='top-right'
+              autoClose={2000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme='light'
+              toastClassName='!rounded-lg !shadow-lg'
+              // bodyClassName='!text-gray-800'
+              progressClassName='!bg-primary'
+            />
           </main>
           <Footer />
         </CartProvider>

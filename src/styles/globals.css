@@ -6,8 +6,28 @@
   --color-primary: #ff7b00;
   --color-secondary: #fdcd00;
   --color-tertiary: #ad4e1f;
+  --toastify-color-light: #fff;
+  --toastify-color-success: #ff7b00;
+  --toastify-color-error: #ef4444;
+  --toastify-color-info: #2563eb;
+  --toastify-text-color-light: #1f2937;
+  --toastify-font-family: 'montserrat', system-ui, sans-serif;
 }
 
+.Toastify__toast {
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+.Toastify__progress-bar--success {
+  background: #ff7b00;
+}
+.Toastify__progress-bar--error {
+  background: #ef4444;
+}
+.Toastify__progress-bar--info {
+  background: #2563eb;
+}
 @theme inline {
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
