@@ -22,11 +22,7 @@ export default function RootLayout({
           <Navbar />
           <main className='flex-grow'>
             {children}
-            <ToastContainer
-            // position='top-right'
-            // autoClose={2000}
-            // theme='colored'
-            />
+            <ToastContainer />
           </main>
           <Footer />
         </CartProvider>

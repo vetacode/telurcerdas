@@ -7,12 +7,19 @@ import { toast } from 'react-toastify';
 
 import { useCart } from '@/app/context/CartContext';
 
-export default function ProductCard({ id, name, desc, price, image }: any) {
+export default function ProductCard({
+  id,
+  name,
+  desc,
+  kemasan,
+  price,
+  image,
+}: any) {
   const [quantity, setQuantity] = useState(1);
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
-    addToCart({ id, name, desc, price, image, quantity });
+    addToCart({ id, name, desc, kemasan, price, image, quantity });
     setQuantity(1);
     toast.success(`${name} added to cart!`, {
       position: 'top-center',
@@ -41,6 +48,7 @@ export default function ProductCard({ id, name, desc, price, image }: any) {
       <div className='mb-4 flex flex-col items-center justify-center gap-2'>
         <h3 className='mb-1 text-xl font-semibold'>{name}</h3>
         <h2 className='md:text-md mb-1 text-gray-600'>{desc}</h2>
+        <h1 className='md:text-md text-tertiary mb-1'>{kemasan}</h1>
         <p className='text-primary mb-4 font-bold'>
           Rp {price.toLocaleString('id-ID')}
         </p>
@@ -57,6 +65,7 @@ export default function ProductCard({ id, name, desc, price, image }: any) {
             onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value)))}
             className='focus:border-primary w-20 rounded border border-gray-300 px-2 py-1 text-center focus:outline-none'
           />
+          {id === 'egg-premium' ? 'Kgs' : 'packs'}
         </div>
       </div>
 
