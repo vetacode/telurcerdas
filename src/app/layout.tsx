@@ -1,4 +1,6 @@
 import '../styles/globals.css';
+import { ToastContainer } from 'react-toastify';
+
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { CartProvider } from './context/CartContext';
@@ -18,7 +20,14 @@ export default function RootLayout({
       <body className='flex min-h-screen flex-col'>
         <CartProvider>
           <Navbar />
-          <main className='flex-grow'>{children}</main>
+          <main className='flex-grow'>
+            {children}
+            <ToastContainer
+            // position='top-right'
+            // autoClose={2000}
+            // theme='colored'
+            />
+          </main>
           <Footer />
         </CartProvider>
       </body>
