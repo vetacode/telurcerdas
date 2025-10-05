@@ -71,9 +71,9 @@ export default function Navbar() {
         className='focus:outline-none md:hidden'
       >
         {menuOpen ? (
-          <XMarkIcon className='h-7 w-7 text-gray-800' />
+          <XMarkIcon className='hover:text-primary h-7 w-7 text-gray-800 hover:cursor-pointer' />
         ) : (
-          <Bars3Icon className='h-7 w-7 text-gray-800' />
+          <Bars3Icon className='hover:text-primary h-7 w-7 text-gray-800 hover:cursor-pointer' />
         )}
       </button>
 
@@ -122,13 +122,13 @@ export default function Navbar() {
                   Subscribe
                 </a>
               </li>
-              <li>
+              <li className='hover:text-primary'>
                 <Link
                   href='/cart'
                   onClick={() => setMenuOpen(false)}
                   className='flex items-center gap-2'
                 >
-                  <ShoppingCartIcon className='h-6 w-6 text-gray-800' />
+                  <ShoppingCartIcon className='hover:text-primary h-6 w-6 text-gray-800' />
                   Cart
                   {totalItems > 0 && (
                     <span className='bg-primary ml-2 flex h-5 w-5 items-center justify-center rounded-full text-xs font-semibold text-white'>
