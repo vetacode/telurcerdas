@@ -19,32 +19,34 @@ export default function ProductCard({ id, name, price, image }: any) {
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
-      className='flex flex-col rounded-lg border border-gray-100 bg-white p-6 text-center shadow transition-all hover:shadow-lg'
+      className='flex flex-col justify-between rounded-lg border border-gray-100 bg-white p-6 text-center shadow transition-all hover:shadow-lg'
     >
       <Image
         src={image}
         alt={name}
         width={400}
         height={300}
-        className='mx-auto mb-4 rounded object-cover'
+        className='mx-auto mb-4 rounded object-fill'
       />
-      <h3 className='mb-1 text-xl font-semibold'>{name}</h3>
-      <p className='text-primary mb-4 font-bold'>
-        Rp {price.toLocaleString('id-ID')}
-      </p>
+      <div className='mb-4 flex flex-col items-center justify-center gap-2'>
+        <h3 className='mb-1 text-xl font-semibold'>{name}</h3>
+        <p className='text-primary mb-4 font-bold'>
+          Rp {price.toLocaleString('id-ID')}
+        </p>
 
-      <div className='mb-4 flex items-center justify-center gap-2'>
-        <label htmlFor={`qty-${id}`} className='text-sm text-gray-600'>
-          Qty:
-        </label>
-        <input
-          id={`qty-${id}`}
-          type='number'
-          min='1'
-          value={quantity}
-          onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value)))}
-          className='focus:border-primary w-20 rounded border border-gray-300 px-2 py-1 text-center focus:outline-none'
-        />
+        <div className='mb-4 flex items-center justify-center gap-2'>
+          <label htmlFor={`qty-${id}`} className='text-sm text-gray-600'>
+            Qty:
+          </label>
+          <input
+            id={`qty-${id}`}
+            type='number'
+            min='1'
+            value={quantity}
+            onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value)))}
+            className='focus:border-primary w-20 rounded border border-gray-300 px-2 py-1 text-center focus:outline-none'
+          />
+        </div>
       </div>
 
       <button
