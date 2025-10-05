@@ -99,6 +99,14 @@ export default function CartPage() {
                 </div>
               </div>
             ))}
+            <div className=''>
+              <Link
+                href='/products'
+                className='bg-primary rounded px-6 py-3 text-white transition-colors hover:bg-orange-600'
+              >
+                Add More
+              </Link>
+            </div>
           </div>
 
           {/* Total + Checkout */}
