@@ -123,7 +123,7 @@ export default function CartPage() {
                 loading
                   ? 'bg-gray-400'
                   : 'bg-primary hover:cursor-pointer hover:bg-orange-600'
-              } rounded px-8 py-3 text-white transition-colors`}
+              } rounded-full px-8 py-3 text-xl text-white transition-colors`}
             >
               {loading ? 'Processing...' : 'Checkout'}
             </button>

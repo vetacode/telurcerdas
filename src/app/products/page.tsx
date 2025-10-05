@@ -4,21 +4,24 @@ const products = [
   {
     id: 'egg-premium',
     name: 'Premium Brown Eggs (1 Kg)',
+    desc: 'Table Eggs, Telur Pilihan, Kualitas Terbaik',
     price: 31000,
     image:
       'https://images.unsplash.com/photo-1506976785307-8732e854ad03?q=80&w=1043&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     id: 'egg-organic',
-    name: 'Organic Free-Range Eggs (10 pcs)',
-    price: 45000,
+    name: 'Herbal Low-Cholesterol Eggs (10 pcs)',
+    desc: 'Telur Herbal Rendah Kolesterol, Tidak Amis, Tidak Menyebabkan Alergi, Cocok Untuk Vegetarian, Kualitas Terbaik',
+    price: 48000,
     image:
       'https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=800&auto=format&fit=crop',
   },
   {
     id: 'telur-cerdas',
-    name: 'Telur Cerdas - Large Premium Eggs for Smarter Life (10 pcs)',
-    price: 50000,
+    name: 'Telur Cerdas - Large Premium Eggs for Smart Life (10 pcs)',
+    desc: 'Telur premium yang dirancang khusus untuk mendukung tumbuh kembang anak. Diperkaya Omega-3, Antioxidant, Selenium Organik dan Herbal Essential Oils alami. Setiap sajian menjadi wujud kasih sayang dan perhatian Anda terhadap keluarga. Karena kualitas terbaik pantas untuk yang tersayang. Telur Cerdas – Otak Kuat, Anak Hebat',
+    price: 55000,
     image: '/images/telurcerdas.png',
     // 'https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?q=80&w=1110&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },

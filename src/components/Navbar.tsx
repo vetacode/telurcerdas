@@ -19,15 +19,17 @@ export default function Navbar() {
   return (
     <nav className='sticky top-0 z-50 flex items-center justify-between bg-white px-6 py-2 shadow-md'>
       {/* Logo */}
-      <section className='mx-auto flex w-4xl justify-between gap-3'>
+      <section className='mx-auto flex w-7xl justify-between gap-3'>
         <div className='flex items-center gap-3'>
-          <Image
-            src='/images/logo.svg'
-            alt='Telur Cerdas Logo'
-            width={60}
-            height={60}
-            className='rounded'
-          />
+          <Link href='/'>
+            <Image
+              src='/images/logo.svg'
+              alt='Telur Cerdas Logo'
+              width={50}
+              height={50}
+              className='rounded'
+            />{' '}
+          </Link>
           <h1 className='text-primary text-xl font-bold'>
             <Link href='/'>Telur Cerdas</Link>
           </h1>

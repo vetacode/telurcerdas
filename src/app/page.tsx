@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <section className='mx-auto max-w-3xl px-8 py-20 text-center'>
+      <section className='mx-auto max-w-4xl px-8 py-20 text-center'>
         <h2 className='text-primary mb-4 text-3xl font-bold'>
           Why Choose Telur Cerdas?
         </h2>
@@ -18,18 +18,18 @@ export default function Home() {
           height={200}
           className='items m-6 mx-auto w-auto shrink-1 rounded'
         />
-        <p className='mx-auto max-w-3xl px-4 text-center text-base leading-relaxed text-gray-700 md:px-0 md:text-lg'>
+        <p className='mx-auto max-w-4xl px-4 text-center text-base leading-relaxed text-gray-700 md:px-0 md:text-lg'>
           {/* <strong className='text-primary mb-3 block text-2xl font-semibold md:text-3xl'>
             Telur Cerdas – Otak Kuat, Anak Hebat
           </strong> */}
-          <span className='mb-4 block text-lg font-medium text-amber-700 md:text-xl'>
+          <strong className='text-tertiary mb-4 block text-lg font-medium md:text-xl'>
             Nutrisi Pilihan untuk Tumbuh Kembang Optimal
-          </span>
+          </strong>
 
           <span className='mb-4 block'>
-            <strong className='text-amber-800'>Telur Cerdas</strong> adalah
-            telur premium yang dirancang khusus untuk mendukung tumbuh kembang
-            anak. Diperkaya dengan <strong>Omega-3</strong> dan
+            <strong className='text-primary'>Telur Cerdas</strong> adalah telur
+            premium yang dirancang khusus untuk mendukung tumbuh kembang anak.
+            Diperkaya dengan <strong>Omega-3</strong> dan
             <strong> Herbal Essential Oils alami</strong>, setiap butir Telur
             Cerdas mengandung nutrisi penting yang membantu meningkatkan{' '}
             <em>daya ingat</em>, <em>kemampuan verbal</em>, serta{' '}

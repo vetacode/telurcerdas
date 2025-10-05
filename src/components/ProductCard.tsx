@@ -5,13 +5,14 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import { useCart } from '@/app/context/CartContext';
+// import { desc } from 'framer-motion/client';
 
-export default function ProductCard({ id, name, price, image }: any) {
+export default function ProductCard({ id, name, desc, price, image }: any) {
   const [quantity, setQuantity] = useState(1);
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
-    addToCart({ id, name, price, image, quantity });
+    addToCart({ id, name, desc, price, image, quantity });
     setQuantity(1);
     alert(`${name} added to cart!`);
   };
@@ -30,6 +31,7 @@ export default function ProductCard({ id, name, price, image }: any) {
       />
       <div className='mb-4 flex flex-col items-center justify-center gap-2'>
         <h3 className='mb-1 text-xl font-semibold'>{name}</h3>
+        <h2 className='md:text-md mb-1 text-gray-600'>{desc}</h2>
         <p className='text-primary mb-4 font-bold'>
           Rp {price.toLocaleString('id-ID')}
         </p>
