@@ -92,7 +92,7 @@ export default function CartPage() {
                   </p>
                   <button
                     onClick={() => removeFromCart(item.id)}
-                    className='text-lg font-bold text-red-500 hover:text-red-700'
+                    className='text-lg font-bold text-red-500 hover:cursor-pointer hover:text-red-700'
                   >
                     ✕
                   </button>

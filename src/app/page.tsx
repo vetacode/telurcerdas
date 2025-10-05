@@ -10,16 +10,12 @@ export default function Home() {
           Why Choose Telur Cerdas?
         </h2>
         <p className='text-gray-600'>
-          <p>
-            Telur Cerdas adalah telur khusus anak yang kaya akan kandungan
-            Omega3 dan Herbal Essential Oils. Telur Cerdas sangat
-            direkomendasikan untuk balita dan anak-anak karena padat nutrisi,
-            khusus untuk memperkuat daya ingat, kemampuan verbal dan
-            memaksimalkan perkembangan otak anak. Telur Cerdas juga
-            direkomendasikan untuk dikonsumsi oleh ibu hamil untuk kesehatan
-            optimal ibu dan sang buah hati.
-          </p>{' '}
-          <br />
+          Telur Cerdas adalah telur khusus anak yang kaya akan kandungan Omega3
+          dan Herbal Essential Oils. Telur Cerdas sangat direkomendasikan untuk
+          balita dan anak-anak karena padat nutrisi, khusus untuk memperkuat
+          daya ingat, kemampuan verbal dan memaksimalkan perkembangan otak anak.
+          Telur Cerdas juga direkomendasikan untuk dikonsumsi oleh ibu hamil
+          untuk kesehatan optimal ibu dan sang buah hati. <br />
           <strong>
             We produce premium-quality eggs with a focus on freshness,
             nutrition, and sustainability.{' '}
