@@ -12,7 +12,7 @@ const products = [
   {
     id: 'egg-organic',
     name: 'Herbal Low-Cholesterol Eggs (10 pcs)',
-    desc: 'Telur Herbal Rendah Kolesterol, Tidak Amis, Tidak Menyebabkan Alergi, Cocok Untuk Vegetarian, Kualitas Terbaik',
+    desc: 'Telur Herbal Rendah Kolesterol, Tidak Amis, Tidak Menyebabkan Alergi, Cocok Untuk Vegetarian, Kualitas Premium',
     price: 48000,
     image:
       'https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=800&auto=format&fit=crop',

@@ -19,9 +19,6 @@ export default function Home() {
           className='items m-6 mx-auto w-auto shrink-1 rounded'
         />
         <p className='mx-auto max-w-4xl px-4 text-center text-base leading-relaxed text-gray-700 md:px-0 md:text-lg'>
-          {/* <strong className='text-primary mb-3 block text-2xl font-semibold md:text-3xl'>
-            Telur Cerdas – Otak Kuat, Anak Hebat
-          </strong> */}
           <strong className='text-tertiary mb-4 block text-lg font-medium md:text-xl'>
             Nutrisi Pilihan untuk Tumbuh Kembang Optimal
           </strong>
