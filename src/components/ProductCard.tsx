@@ -1,4 +1,5 @@
 'use client';
+import { ShoppingCartIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -18,7 +19,7 @@ export default function ProductCard({ id, name, price, image }: any) {
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
-      className='rounded-lg border border-gray-100 bg-white p-6 text-center shadow transition-all hover:shadow-lg'
+      className='flex flex-col rounded-lg border border-gray-100 bg-white p-6 text-center shadow transition-all hover:shadow-lg'
     >
       <Image
         src={image}
@@ -48,9 +49,10 @@ export default function ProductCard({ id, name, price, image }: any) {
 
       <button
         onClick={handleAddToCart}
-        className='bg-primary hover: cursor-pointer rounded px-6 py-2 text-white transition-colors hover:bg-orange-600'
+        className='bg-primary flex items-center justify-center gap-2 rounded px-6 py-2 text-white transition-colors hover:cursor-pointer hover:bg-orange-600'
       >
-        Add to Cart
+        Add to Cart{' '}
+        <ShoppingCartIcon className='h-6 w-6 text-white transition-colors' />
       </button>
     </motion.div>
   );

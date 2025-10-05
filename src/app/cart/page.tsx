@@ -57,7 +57,7 @@ export default function CartPage() {
                 className='flex flex-col gap-4 rounded-lg bg-white p-4 shadow sm:flex-row sm:items-center sm:justify-between'
               >
                 {/* Product Info */}
-                <div className='flex items-center gap-4'>
+                <div className='flex items-center gap-4 sm:items-start'>
                   <Image
                     src={item.image}
                     alt={item.name}
@@ -74,7 +74,7 @@ export default function CartPage() {
                 </div>
 
                 {/* Quantity + Controls */}
-                <div className='flex flex-wrap items-center justify-between gap-4 sm:justify-end'>
+                <div className='flex flex-wrap items-center justify-start gap-4 sm:justify-end'>
                   <input
                     type='number'
                     min='1'

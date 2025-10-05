@@ -25,7 +25,7 @@ export default function Navbar() {
           alt='Telur Cerdas Logo'
           width={60}
           height={60}
-          className='rounded'
+          className='width-auto rounded'
         />
         <h1 className='text-primary text-xl font-bold'>
           <Link href='/'>Telur Cerdas</Link>
@@ -44,14 +44,6 @@ export default function Navbar() {
             Products
           </Link>
         </li>
-        <li>
-          <a
-            href='#subscribe'
-            className='bg-primary rounded px-4 py-2 text-white transition-colors hover:bg-orange-600'
-          >
-            Subscribe
-          </a>
-        </li>
         {/* Cart */}
         <li className='relative'>
           <Link href='/cart' className='flex items-center gap-2'>
@@ -62,6 +54,14 @@ export default function Navbar() {
               </span>
             )}
           </Link>
+        </li>
+        <li>
+          <a
+            href='#subscribe'
+            className='bg-primary rounded px-4 py-2 text-white transition-colors hover:bg-orange-600'
+          >
+            Subscribe
+          </a>
         </li>
       </ul>
 
