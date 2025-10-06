@@ -1,14 +1,28 @@
 'use client';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className='from-primary bg-gradient-to-t to-orange-400 px-8 py-20 text-center text-white'>
+    <section className='from-primary relative overflow-hidden bg-gradient-to-t to-orange-400 px-8 py-20 text-center text-white'>
+      {/* Background Image */}
+      <div className='absolute inset-0 opacity-25'>
+        <Image
+          src='/images/hero-banner2.png'
+          alt='hero background'
+          fill
+          className='object-cover'
+          priority
+        />
+      </div>
+
+      {/* Content */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        className='relative z-10'
       >
         <h1 className='mb-4 text-5xl font-bold'>
           Fresh, Smart, and Nutritious Eggs
