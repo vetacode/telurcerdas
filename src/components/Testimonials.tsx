@@ -15,7 +15,7 @@ const testimonials = [
     name: 'drh. Lina Maryana',
     role: 'Dokter Hewan - Marketing Manager',
     message:
-      'Telur Cerdas membuat anak saya lebih fokus belajar! Rasanya juga segar dan gurih. Sekarang setiap sarapan wajib Telur Cerdas!',
+      'Anak saya sangat suka Telur Cerdas krn tidak amis dan tidak alergi. Rasanya jg segar dan gurih. Skrg setiap sarapan pasti Telur Cerdas!',
     image: '/images/testimonial-1.jpeg',
     rating: 5,
   },
@@ -30,8 +30,8 @@ const testimonials = [
   },
   {
     id: 3,
-    name: 'Dewi Kartika',
-    role: 'Guru TK',
+    name: 'Natassya Paramita',
+    role: 'Office Manager',
     message:
       'Anak-anak jadi lebih aktif, ceria, dan cepat belajar. Terima kasih Telur Cerdas, produk lokal dengan kualitas premium!',
     image: '/images/testimonial-3.png',
