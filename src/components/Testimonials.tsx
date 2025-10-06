@@ -12,8 +12,8 @@ import { useState } from 'react';
 const testimonials = [
   {
     id: 1,
-    name: 'Lina Maryana',
-    role: 'Marketing Manager',
+    name: 'drh. Lina Maryana',
+    role: 'Dokter Hewan - Marketing Manager',
     message:
       'Telur Cerdas membuat anak saya lebih fokus belajar! Rasanya juga segar dan gurih. Sekarang setiap sarapan wajib Telur Cerdas!',
     image: '/images/testimonial-1.jpeg',
@@ -39,7 +39,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: 'Dr. Fernando',
+    name: 'dr. Fernando Sp.A',
     role: 'Dokter Anak',
     message:
       'Saya tidak pernah absen stok Telur Cerdas di rumah. Anak-anak suka, dan saya tenang dengan kandungan nutrisinya.',

@@ -43,7 +43,7 @@ export default function Home() {
                 <strong className='text-primary'> Telur Cerdas</strong>. Telur
                 premium yang diformulasikan khusus untuk mendukung tumbuh
                 kembang anak secara alami. Diperkaya dengan{' '}
-                <strong>Ramuan Khusus Herbal Penguat Daya Ingat</strong> dan
+                <strong>Ramuan Herbal Khusus Penguat Daya Ingat</strong> dan
                 <strong> Omega-3</strong>, setiap butir{' '}
                 <strong className='text-primary'> Telur Cerdas</strong> membantu
                 menutrisi otak, memperkuat <em>daya ingat</em>, serta mengasah{' '}
