@@ -32,8 +32,8 @@ export default function Hero() {
         </p>
         <Link href='/products'>
           <motion.button
-            whileHover={{ scale: 1.2, rotate: 5 }}
-            whileTap={{ scale: 0.8, rotate: -15 }}
+            whileHover={{ scale: 1.2, rotate: 2 }}
+            whileTap={{ scale: 0.8, rotate: -4 }}
             transition={{ type: 'spring', stiffness: 400, damping: 17 }}
             className='text-primary hover:bg-primary rounded-full bg-white px-6 py-3 font-semibold transition-colors duration-200 ease-in-out hover:cursor-pointer hover:text-white hover:shadow-[0_0_17px_rgba(255,255,255,0.9)] active:bg-orange-600'
           >
