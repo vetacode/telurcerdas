@@ -67,74 +67,53 @@ export default function Testimonials() {
   const [index, setIndex] = useState(0);
 
   const nextTestimonial = () =>
-    setIndex((prev) => (prev + 1) % testimonials.length);
-  const prevTestimonial = () =>
-    setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setIndex((prev) => (prev + 1 >= testimonials.length ? 0 : prev + 1));
 
-  // Helper: ambil 3 item berurutan (wrap around)
-  const getVisibleTestimonials = () => {
-    const visible = [];
-    for (let i = 0; i < 3; i++) {
-      visible.push(testimonials[(index + i) % testimonials.length]);
-    }
-    return visible;
-  };
+  const prevTestimonial = () =>
+    setIndex((prev) => (prev - 1 < 0 ? testimonials.length - 1 : prev - 1));
 
   return (
-    <section className='from-#fff7ef overflow-hidden bg-gradient-to-t to-white py-16 text-center'>
+    <section className='overflow-hidden bg-[#fff7ef] py-16 text-center'>
       <div className='mx-auto max-w-7xl px-8'>
         <h2 className='text-primary mb-12 text-3xl font-bold'>
           Apa Kata Mereka?
         </h2>
 
-        {/* ✅ Desktop carousel (3 visible, slide animation) */}
+        {/* ✅ Desktop carousel (continuous infinite scroll) */}
         <div className='relative hidden md:block'>
           <div className='overflow-hidden px-8'>
-            <AnimatePresence mode='wait'>
-              <motion.div
-                key={index}
-                initial={{ x: 100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: -100, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                className='grid grid-cols-1 gap-8 md:grid-cols-3'
-              >
-                {getVisibleTestimonials().map((t) => (
-                  <div
-                    key={t.id}
-                    className='rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl'
-                  >
-                    <Image
-                      src={t.image}
-                      alt={t.name}
-                      width={100}
-                      height={100}
-                      className='mx-auto mb-4 h-20 w-20 rounded-full object-cover shadow'
-                    />
-                    <p className='mb-4 text-gray-600 italic'>“{t.message}”</p>
-                    <h4 className='text-primary font-semibold'>{t.name}</h4>
-                    <p className='text-sm text-gray-500'>{t.role}</p>
-                    {renderStars(t.rating)}
-                  </div>
-                ))}
-              </motion.div>
-            </AnimatePresence>
-          </div>
+            <div className='pointer-events-none absolute inset-y-0 left-0 z-10 w-25 bg-gradient-to-r from-[#fff8f1] to-transparent'></div>
+            <div className='pointer-events-none absolute inset-y-0 right-0 z-10 w-25 bg-gradient-to-l from-[#fff8f1] to-transparent'></div>
 
-          {/* Desktop navigation buttons */}
-          <div className='absolute inset-0 -mx-10 flex items-center justify-between px-6'>
-            <button
-              onClick={prevTestimonial}
-              className='text-primary rounded-full bg-orange-200 p-2 opacity-70 shadow-md transition hover:cursor-pointer hover:bg-orange-300'
+            <motion.div
+              className='flex gap-8'
+              animate={{ x: ['0%', 'calc(-100% - 6rem)'] }} // move full width left
+              transition={{
+                duration: 50, // adjust speed (higher = slower)
+                ease: 'linear',
+                repeat: Infinity,
+              }}
             >
-              <ChevronLeftIcon className='h-6 w-6' />
-            </button>
-            <button
-              onClick={nextTestimonial}
-              className='text-primary rounded-full bg-orange-200 p-2 opacity-70 shadow-md transition hover:cursor-pointer hover:bg-orange-300'
-            >
-              <ChevronRightIcon className='h-6 w-6' />
-            </button>
+              {/* Duplicate testimonials for seamless looping */}
+              {[...testimonials, ...testimonials].map((t, i) => (
+                <div
+                  key={i}
+                  className='min-w-[33.33%] rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl'
+                >
+                  <Image
+                    src={t.image}
+                    alt={t.name}
+                    width={100}
+                    height={100}
+                    className='mx-auto mb-4 h-20 w-20 rounded-full object-cover shadow'
+                  />
+                  <p className='mb-4 text-gray-600 italic'>“{t.message}”</p>
+                  <h4 className='text-primary font-semibold'>{t.name}</h4>
+                  <p className='text-sm text-gray-500'>{t.role}</p>
+                  {renderStars(t.rating)}
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
 
