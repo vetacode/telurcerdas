@@ -1,5 +1,6 @@
 'use client';
 import axios from 'axios';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -116,17 +117,19 @@ export default function CartPage() {
                 Rp {total.toLocaleString('id-ID')}
               </span>
             </h2>
-            <button
+            <motion.button
+              whileHover={{ scale: 1.2, rotate: 2 }}
+              whileTap={{ scale: 0.8, rotate: -2 }}
               onClick={handleCheckout}
               disabled={loading}
               className={`${
                 loading
-                  ? 'bg-gray-400'
-                  : 'bg-primary hover:cursor-pointer hover:bg-orange-600'
-              } rounded-full px-8 py-3 text-xl text-white transition-colors`}
+                  ? 'cursor-not-allowed bg-gray-400'
+                  : 'ring-primary hover:bg-primary text-primary bg-amber-100 ring-2 hover:cursor-pointer hover:text-white hover:ring-3 hover:ring-white active:bg-orange-600'
+              } rounded-full px-8 py-3 text-xl font-semibold`}
             >
               {loading ? 'Processing...' : 'Checkout'}
-            </button>
+            </motion.button>
           </div>
         </>
       )}
