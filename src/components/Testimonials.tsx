@@ -22,9 +22,9 @@ const testimonials = [
   {
     id: 2,
     name: 'Priskila',
-    role: 'Owner Kafe Sehat',
+    role: 'Owner Healthy Cafe',
     message:
-      'Kualitas Telur Cerdas luar biasa! Kuningnya cerah, dan teksturnya padat. Cocok untuk semua menu sehat di kafe saya.',
+      'Kualitas Telur Cerdas luar biasa! Kuningnya cerah, dan teksturnya padat. Cocok untuk semua menu sehat di cafe saya.',
     image: '/images/testimonial-2.jpeg',
     rating: 5,
   },
