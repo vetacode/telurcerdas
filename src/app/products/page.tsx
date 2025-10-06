@@ -22,7 +22,7 @@ const products = [
   {
     id: 'telur-cerdas',
     name: 'Telur Cerdas - Premium Eggs for Smart Life (10 eggs)',
-    desc: 'Telur Premium diperkaya Omega-3, Antioksidan, Organic Selenium dan Herbal Essentials, membantu menutrisi otak, menjaga daya tahan, dan memberi energi alami setiap hari. 🌿 Seharga segelas kopi, beri yang terbaik untuk keluarga tercinta. Tumbuh kembang anak dan kesehatan keluarga adalah investasi terbaik. Otak Kuat, Anak Hebat',
+    desc: 'Telur Premium diperkaya Omega-3, Antioksidan, Organic Selenium dan Herbal Essentials.🌿 Seharga segelas kopi, beri yang terbaik untuk keluarga tercinta. Tumbuh kembang anak dan kesehatan keluarga adalah investasi terbaik. Otak Kuat, Anak Hebat',
     kemasan: 'Minimum packaging dus: 6 pack per dus',
     price: 55000,
     image: '/images/telurcerdas.png',
