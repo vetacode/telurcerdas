@@ -15,7 +15,8 @@ export default function Footer() {
         whileHover={{ scale: 1.1, rotate: 100 }}
         whileTap={{ scale: 0.8, rotate: -100 }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-        href='https://wa.link/cu3pim'
+        // href='https://wa.link/cu3pim'
+        href='https://wa.link/5xrmu5'
         target='_blank'
         className='fixed right-4 bottom-4 z-50 rounded-full bg-transparent shadow-lg md:right-8 md:bottom-8'
       >
