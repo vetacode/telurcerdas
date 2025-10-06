@@ -15,7 +15,7 @@ export default function Home() {
         </h2>
         <motion.div
           whileHover={{ scale: 1.1, rotate: 10 }}
-          whileTap={{ scale: 0.8, rotate: -10 }}
+          whileTap={{ scale: 0.8, rotate: -360 }}
           transition={{ type: 'spring', stiffness: 300, damping: 20 }}
           className='z-50shadow-lg'
         >
