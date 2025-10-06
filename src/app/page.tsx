@@ -32,17 +32,20 @@ export default function Home() {
 
           <div className='mx-auto max-w-4xl text-justify text-base leading-relaxed text-gray-700 md:text-lg'>
             <strong className='text-tertiary mb-4 block text-lg font-medium md:text-xl'>
-              Nutrisi Pilihan untuk Tumbuh Kembang Optimal
+              Nutrisi Tepat untuk Tumbuh Kembang Optimal
             </strong>
 
             <span className='mb-4 block'>
-              <strong className='text-primary'>Telur Cerdas</strong> adalah
-              telur premium yang dirancang khusus untuk mendukung tumbuh kembang
-              anak. Diperkaya dengan{' '}
-              <strong>Ramuan Khusus Herbal Essential Oils alami</strong> dan
-              <strong> Omega-3</strong>, setiap butir Telur Cerdas mengandung
-              nutrisi penting yang membantu meningkatkan <em>daya ingat</em>,{' '}
-              <em>kemampuan verbal</em>, serta <em>perkembangan otak anak</em>{' '}
+              Bayangkan setiap pagi, si kecil tumbuh lebih ceria, fokus belajar,
+              dan cepat tangkap. Itulah manfaat yang terkandung dalam
+              <strong className='text-primary'> Telur Cerdas</strong>. Telur
+              premium yang diformulasikan khusus untuk mendukung tumbuh kembang
+              anak secara alami. Diperkaya dengan{' '}
+              <strong>Ramuan Khusus Herbal Penguat Daya Ingat</strong> dan
+              <strong> Omega-3</strong>, setiap butir{' '}
+              <strong className='text-primary'> Telur Cerdas</strong> membantu
+              menutrisi otak, memperkuat <em>daya ingat</em>, serta mengasah{' '}
+              <em>kemampuan berpikir</em> dan <em>berbicara anak</em> sejak dini
               secara optimal.
             </span>
 
@@ -64,16 +67,17 @@ export default function Home() {
             </div>
 
             <span className='mb-4 block'>
-              Telur Cerdas juga direkomendasikan untuk{' '}
-              <strong>ibu hamil</strong>, guna menjaga kesehatan tubuh sekaligus
-              memberikan asupan nutrisi terbaik bagi buah hati sejak dalam
-              kandungan.
+              <strong className='text-primary'> Telur Cerdas</strong> juga
+              direkomendasikan untuk <strong>ibu hamil</strong>, guna menjaga
+              kesehatan tubuh sekaligus memberikan asupan nutrisi terbaik bagi
+              buah hati sejak dalam kandungan.
             </span>
 
             <span className='mb-6 block text-gray-600 italic'>
-              Dengan Telur Cerdas, setiap sajian menjadi wujud kasih sayang dan
-              perhatian Anda terhadap keluarga — karena kualitas terbaik pantas
-              untuk yang tersayang.
+              Dengan <strong className='text-primary'> Telur Cerdas</strong>,
+              setiap sajian menjadi wujud kasih sayang dan perhatian Anda
+              terhadap keluarga — 💛 Karena setiap anak cerdas berawal dari
+              asupan yang cerdas.
             </span>
 
             <strong className='text-primary mt-6 block border-t border-gray-200 pt-4 text-center text-lg md:text-xl'>
