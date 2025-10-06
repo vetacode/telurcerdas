@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <nav className='sticky top-0 z-50 flex items-center justify-between bg-white px-6 py-2 shadow-md'>
       {/* Logo */}
-      <section className='mx-auto flex w-7xl justify-between gap-3'>
+      <section className='mx-auto flex w-4xl justify-between gap-3'>
         <div className='flex items-center gap-3'>
           <motion.a
             whileHover={{ scale: 1.1, rotate: -45 }}
