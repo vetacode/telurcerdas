@@ -15,13 +15,16 @@ export default function Hero() {
         <p className='mb-8 text-lg'>
           Delivering high-quality eggs straight from our farm to your home.
         </p>
-        <a
-          href='/products'
-          className='text-primary rounded-full bg-white px-6 py-3 font-semibold transition duration-200 ease-in-out hover:bg-orange-600 hover:text-white hover:shadow-[0_0_17px_rgba(255,255,255,0.9)] hover:ring-3'
-        >
-          Shop Now
-        </a>
       </motion.div>
+      <motion.a
+        href='/products'
+        whileHover={{ scale: 1.2, rotate: 10 }}
+        whileTap={{ scale: 0.8, rotate: -10 }}
+        transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+        className='text-primary hover:bg-primary rounded-full bg-white px-6 py-3 font-semibold transition-colors duration-200 ease-in-out hover:text-white hover:shadow-[0_0_17px_rgba(255,255,255,0.9)] active:bg-orange-600'
+      >
+        Shop Now
+      </motion.a>
     </section>
   );
 }
