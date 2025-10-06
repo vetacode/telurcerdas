@@ -38,11 +38,12 @@ export default function Home() {
             <span className='mb-4 block'>
               <strong className='text-primary'>Telur Cerdas</strong> adalah
               telur premium yang dirancang khusus untuk mendukung tumbuh kembang
-              anak. Diperkaya dengan <strong>Omega-3</strong> dan
-              <strong> Herbal Essential Oils alami</strong>, setiap butir Telur
-              Cerdas mengandung nutrisi penting yang membantu meningkatkan{' '}
-              <em>daya ingat</em>, <em>kemampuan verbal</em>, serta{' '}
-              <em>perkembangan otak anak</em> secara optimal.
+              anak. Diperkaya dengan{' '}
+              <strong>Ramuan Khusus Herbal Essential Oils alami</strong> dan
+              <strong> Omega-3</strong>, setiap butir Telur Cerdas mengandung
+              nutrisi penting yang membantu meningkatkan <em>daya ingat</em>,{' '}
+              <em>kemampuan verbal</em>, serta <em>perkembangan otak anak</em>{' '}
+              secara optimal.
             </span>
 
             {/* Mobile Image - appears within text flow on mobile */}
