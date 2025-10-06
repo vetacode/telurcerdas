@@ -12,20 +12,39 @@ export default function Footer() {
         </small>
       </footer>
       <motion.a
-        whileHover={{ scale: 1.1, rotate: 100 }}
-        whileTap={{ scale: 0.8, rotate: -100 }}
-        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-        // href='https://wa.link/cu3pim'
+        initial={{ scale: 0 }}
+        animate={{
+          scale: 1,
+          y: [0, -20, 0, -8, 0], // Multi-step bounce for more natural effect
+        }}
+        transition={{
+          scale: { duration: 0.5 },
+          y: {
+            duration: 2.5,
+            repeat: Infinity,
+            ease: 'easeInOut',
+            repeatType: 'loop',
+          },
+        }}
+        whileHover={{
+          scale: 1.1,
+          rotate: 100,
+          y: 0, // Stop bouncing on hover
+          transition: { duration: 0.3 },
+        }}
+        whileTap={{
+          scale: 0.8,
+          rotate: -100,
+        }}
         href='https://wa.link/5xrmu5'
         target='_blank'
-        className='fixed right-4 bottom-4 z-50 rounded-full bg-transparent shadow-lg md:right-8 md:bottom-8'
+        className='fixed right-6 bottom-6 z-50 rounded-full bg-transparent shadow-lg md:right-12 md:bottom-12'
       >
-        {' '}
         <Image
           src='/images/waicon3d.png'
           alt='whatsapp'
-          width={50}
-          height={50}
+          width={70}
+          height={70}
           className='rounded-full'
         />
       </motion.a>
