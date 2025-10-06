@@ -4,12 +4,13 @@ import Image from 'next/image';
 
 import Hero from '../components/Hero';
 import SubscribeForm from '../components/SubscribeForm';
+import Testimonials from '../components/Testimonials';
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <section className='mx-auto max-w-4xl px-8 py-20 text-center'>
+      <section className='mx-auto max-w-7xl px-8 py-20 text-center'>
         <h2 className='text-primary mar mb-8 text-3xl font-bold'>
           Why Choose Telur Cerdas?
         </h2>
@@ -30,7 +31,7 @@ export default function Home() {
             />
           </motion.div>
 
-          <div className='mx-auto max-w-4xl text-justify text-base leading-relaxed text-gray-700 md:text-lg'>
+          <div className='mx-auto max-w-7xl text-justify text-base leading-relaxed text-gray-700 md:text-lg'>
             <strong className='text-tertiary mb-4 block text-lg font-medium md:text-xl'>
               Nutrisi Tepat untuk Tumbuh Kembang Optimal
             </strong>
@@ -87,6 +88,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Testimonials />
       <SubscribeForm />
     </main>
   );

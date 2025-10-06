@@ -32,7 +32,7 @@ const products = [
 
 export default function ProductsPage() {
   return (
-    <main className='px-8 py-16'>
+    <main className='mx-auto max-w-7xl px-8 py-16'>
       <h2 className='text-primary mb-12 text-center text-4xl font-bold'>
         Our Products
       </h2>

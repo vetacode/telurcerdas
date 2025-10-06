@@ -35,7 +35,7 @@ export default function CartPage() {
   };
 
   return (
-    <div className='container mx-auto max-w-4xl px-6 py-12'>
+    <div className='container mx-auto max-w-7xl px-6 py-12'>
       <h1 className='text-primary mb-8 text-3xl font-bold'>🛒 Your Cart</h1>
 
       {cart.length === 0 ? (
