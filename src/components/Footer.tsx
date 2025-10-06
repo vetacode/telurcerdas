@@ -40,13 +40,13 @@ export default function Footer() {
         target='_blank'
         className='fixed right-6 bottom-6 z-50 rounded-full bg-transparent shadow-lg md:right-12 md:bottom-12'
       >
-        <div className='flex h-20 w-20 items-center justify-center overflow-hidden rounded-full'>
+        <div className='flex h-16 w-16 items-center justify-center overflow-hidden rounded-full md:h-20 md:w-20'>
           <Image
             src='/images/waicon3d.png'
             alt='whatsapp'
             width={70}
             height={70}
-            className='scale-125 object-cover'
+            className='scale-107 object-cover md:scale-125'
           />
         </div>
       </motion.a>
