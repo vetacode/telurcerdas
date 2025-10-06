@@ -33,7 +33,7 @@ export default function Navbar() {
               alt='Telur Cerdas Logo'
               width={50}
               height={50}
-              className='h-auto rounded-full'
+              className='h-auto max-h-12 w-auto rounded-full'
             />
           </motion.a>{' '}
           <h1 className='text-primary text-xl font-bold'>

@@ -59,8 +59,8 @@ export default function Home() {
                 <Image
                   src='/images/logo-full.png'
                   alt='Telur Cerdas Logo'
-                  width={150}
-                  height={150}
+                  width={200}
+                  height={200}
                   className='mx-auto w-auto rounded'
                 />
               </motion.div>
