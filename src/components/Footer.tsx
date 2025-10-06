@@ -28,7 +28,7 @@ export default function Footer() {
         }}
         whileHover={{
           scale: 1.1,
-          rotate: 100,
+          rotate: 45,
           y: 0, // Stop bouncing on hover
           transition: { duration: 0.3 },
         }}
