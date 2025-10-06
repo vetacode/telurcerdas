@@ -78,7 +78,7 @@ export default function Home() {
               <span className='mb-6 block text-gray-600 italic'>
                 Dengan <strong className='text-primary'> Telur Cerdas</strong>,
                 setiap sajian menjadi wujud kasih sayang dan perhatian Anda
-                terhadap keluarga — 💛 Karena setiap anak cerdas berawal dari
+                terhadap keluarga 💛 Karena setiap anak cerdas berawal dari
                 asupan yang cerdas.
               </span>
 
