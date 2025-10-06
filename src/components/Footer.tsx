@@ -21,8 +21,6 @@ export default function Footer() {
       >
         {' '}
         <Image
-          // src='/images/logo.svg'
-          // src='/images/whatsapp-icon.png'
           src='/images/waicon3d.png'
           alt='whatsapp'
           width={50}

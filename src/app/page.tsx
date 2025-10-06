@@ -1,4 +1,5 @@
 'use client';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 import Hero from '../components/Hero';
@@ -12,13 +13,22 @@ export default function Home() {
         <h2 className='text-primary mb-4 text-3xl font-bold'>
           Why Choose Telur Cerdas?
         </h2>
-        <Image
-          src='/images/logo-full.png'
-          alt='Telur Cerdas Logo'
-          width={200}
-          height={200}
-          className='items m-6 mx-auto w-auto shrink-1 rounded'
-        />
+        <motion.div
+          whileHover={{ scale: 1.1, rotate: 10 }}
+          whileTap={{ scale: 0.8, rotate: -10 }}
+          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+          className='z-50shadow-lg'
+        >
+          {' '}
+          <Image
+            src='/images/logo-full.png'
+            alt='Telur Cerdas Logo'
+            width={200}
+            height={200}
+            className='items m-6 mx-auto w-auto shrink-1 rounded'
+          />
+        </motion.div>
+
         <p className='mx-auto max-w-4xl px-4 text-center text-base leading-relaxed text-gray-700 md:px-0 md:text-lg'>
           <strong className='text-tertiary mb-4 block text-lg font-medium md:text-xl'>
             Nutrisi Pilihan untuk Tumbuh Kembang Optimal

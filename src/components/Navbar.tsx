@@ -21,15 +21,21 @@ export default function Navbar() {
       {/* Logo */}
       <section className='mx-auto flex w-7xl justify-between gap-3'>
         <div className='flex items-center gap-3'>
-          <Link href='/'>
+          <motion.a
+            whileHover={{ scale: 1.1, rotate: -45 }}
+            whileTap={{ scale: 0.8, rotate: 100 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+            className='z-50shadow-lg'
+          >
+            {' '}
             <Image
               src='/images/logo.svg'
               alt='Telur Cerdas Logo'
               width={50}
               height={50}
-              className='rounded'
-            />{' '}
-          </Link>
+              className='h-auto rounded-full'
+            />
+          </motion.a>{' '}
           <h1 className='text-primary text-xl font-bold'>
             <Link href='/'>Telur Cerdas</Link>
           </h1>
