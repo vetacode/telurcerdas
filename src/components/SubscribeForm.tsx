@@ -7,7 +7,7 @@ export default function SubscribeForm() {
         Join Our Newsletter
       </h2>
       <p className='mb-8 text-gray-600'>
-        Get updates on new products and offers.
+        Get updates on new Nutrition Tips, Products and Offers.
       </p>
       <form className='mx-auto flex max-w-lg flex-col justify-center gap-4 sm:flex-row'>
         <input
