@@ -25,7 +25,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.1, rotate: -45 }}
             whileTap={{ scale: 0.8, rotate: 100 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-            className='z-50shadow-lg'
+            className='z-50'
           >
             {' '}
             <Image
