@@ -15,7 +15,8 @@ export default function Footer() {
         initial={{ scale: 0 }}
         animate={{
           scale: 1,
-          y: [0, -20, 0, -8, 0], // Multi-step bounce for more natural effect
+          y: [0, -20, 0, -8, 0],
+          rotate: [0, 360],
         }}
         transition={{
           scale: { duration: 0.5 },
@@ -25,16 +26,21 @@ export default function Footer() {
             ease: 'easeInOut',
             repeatType: 'loop',
           },
+
+          rotate: {
+            duration: 8,
+            repeat: Infinity,
+            repeatType: 'reverse',
+            ease: 'linear',
+          },
         }}
         whileHover={{
-          scale: 1.1,
-          rotate: 45,
-          y: 0, // Stop bouncing on hover
+          scale: 1.2,
+          rotate: 0, // stop rotation while hovered (optional)
           transition: { duration: 0.3 },
         }}
         whileTap={{
           scale: 0.8,
-          rotate: -100,
         }}
         href='https://wa.link/5xrmu5'
         target='_blank'
