@@ -79,7 +79,7 @@ export default function Testimonials() {
           Apa Kata Mereka?
         </h2>
 
-        {/* ✅ Desktop carousel (continuous infinite scroll) */}
+        {/* Desktop carousel (continuous infinite scroll) */}
         <div className='relative hidden md:block'>
           <div className='overflow-hidden px-8'>
             <div className='pointer-events-none absolute inset-y-0 left-0 z-10 w-25 bg-gradient-to-r from-[#fff8f1] to-transparent'></div>
@@ -117,7 +117,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* ✅ Mobile carousel (1 visible, same animation) */}
+        {/* Mobile carousel (1 visible, same animation) */}
         <div className='relative mx-auto w-full max-w-xs md:hidden'>
           <AnimatePresence mode='wait'>
             <motion.div
