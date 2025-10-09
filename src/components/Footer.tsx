@@ -36,7 +36,7 @@ export default function Footer() {
         }}
         whileHover={{
           scale: 1.2,
-          rotate: 0, // stop rotation while hovered (optional)
+          rotate: 0,
           transition: { duration: 0.3 },
         }}
         whileTap={{

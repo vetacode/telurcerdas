@@ -87,7 +87,7 @@ export default function Testimonials() {
 
             <motion.div
               className='flex gap-8'
-              animate={{ x: ['0%', 'calc(-100% - 6rem)'] }} // move full width left
+              animate={{ x: ['0%', 'calc(-100% - 6rem)'] }}
               transition={{
                 duration: 50, // adjust speed (higher = slower)
                 ease: 'linear',
