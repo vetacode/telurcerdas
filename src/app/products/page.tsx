@@ -5,8 +5,8 @@ const products = [
     id: 'egg-premium',
     name: 'Premium Brown Eggs (1 Kg)',
     desc: 'Table Eggs, Telur Pilihan, Kualitas Terbaik',
-    kemasan: 'Minimum packaging dus: 3kg',
-    price: 31000,
+    kemasan: 'Minimum packaging',
+    price: 25800,
     image:
       'https://images.unsplash.com/photo-1506976785307-8732e854ad03?q=80&w=1043&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
