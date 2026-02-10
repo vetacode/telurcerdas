@@ -41,7 +41,7 @@ export default function Footer() {
         whileTap={{
           scale: 0.8,
         }}
-        href='https://wa.me/6281384072641'
+        href='https://wa.me/6281384072641?text=Halo%2C%20saya%20tertarik%20dengan%20Telur%20Cerdas%20Anak%2C%20bisa%20dibantu?'
         // href='https://wa.link/5xrmu5'
         target='_blank'
         className='fixed right-6 bottom-6 z-50 rounded-full bg-transparent shadow-lg md:right-12 md:bottom-12'
